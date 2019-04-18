@@ -1,0 +1,9 @@
+.am-wingblank{
+    margin:0 !important;
+}
+.am-carousel-wrap{
+    opacity: 0.5;
+}
+.am-carousel-wrap-dot-active>span{
+    background:rgba(255,104,84,1);
+}
