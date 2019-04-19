@@ -1,0 +1,38 @@
+
+.fenlei_right{
+    width: 2.3rem;
+    height: 100%;
+    padding: .05rem;
+    padding-bottom: 0;
+    background: rgba(245,245,245,1);
+}
+.img{
+    width: 2.2rem;
+    height: .83rem;
+    background: rgba(245,245,245,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    width: 45%;
+    height: .83rem;
+}
+.fenlei_shop{
+    font-size: .12rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+.fenlei_shop li{
+    width: .73rem;
+    height: .98rem;
+    padding: .1rem;
+}
+.fenlei_shop li img{
+    width: .6rem;
+    height: .6rem;
+}
+
+
+

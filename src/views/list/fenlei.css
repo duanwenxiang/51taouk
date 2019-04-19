@@ -1,0 +1,25 @@
+.fenlei{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.fenlei_tabbar{
+    width: .9rem;
+    height: 2.25rem;
+    font-size: .13rem;
+}
+.fenlei_tabbar li{
+    width: .9rem;
+    height: .45rem;
+    color:rgba(58,58,58,1);
+    line-height: .45rem;
+    text-align: center;
+}
+.fenlei_tabbar .active{
+    box-sizing: border-box;
+    color: rgba(255,104,84,1);
+    background: rgba(245,245,245,1);
+    border-left: 2px solid rgba(255,104,84,1);
+}
+
