@@ -19,7 +19,7 @@ class TabBarCom extends Component {
     }
     render() {
         return (
-            <div style={{ position: 'fixed', width: '100%', bottom: 0 }}>
+            <div style={{ position: 'fixed', width: '100%', bottom: 0 ,zIndex:"5"}}>
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"

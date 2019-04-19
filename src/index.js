@@ -1,12 +1,15 @@
-import React,{Fragment} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {GlobalStyle} from '@/reset'
+import {GlobalStyle} from '@/reset';
+// 让全局都能使用redux，不需要再引入单独store
+import {Provider} from "react-redux";
+import store from '@/store'
 
 ReactDOM.render(
-    <Fragment>
+    <Provider store={store}>
         <App />
         <GlobalStyle/>
-    </Fragment>
+    </Provider>
     , document.getElementById('root'));
 
