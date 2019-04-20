@@ -5,7 +5,7 @@ import {GlobalStyle} from '@/reset';
 // 让全局都能使用redux，不需要再引入单独store
 import {Provider} from "react-redux";
 import store from '@/store'
-
+import "./mock"
 ReactDOM.render(
     <Provider store={store}>
         <App />

@@ -13,8 +13,7 @@ class TabBarCom extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedTab: 'blueTab',
-            hidden: false,
+            selectedTab: 'home',
         };
     }
     render() {
@@ -42,10 +41,10 @@ class TabBarCom extends Component {
                         }}
                         />
                         }
-                        selected={this.state.selectedTab === 'blueTab'}
+                        selected={this.state.selectedTab === 'home'}
                         onPress={() => {
                             this.setState({
-                                selectedTab: 'blueTab',
+                                selectedTab: 'home',
                             });
                             this.props.history.push("/home");
                         }}
@@ -71,12 +70,12 @@ class TabBarCom extends Component {
                         }
                         title="列表"
                         key="List"
-                        selected={this.state.selectedTab === 'redTab'}
+                        selected={this.state.selectedTab === 'list'}
                         onPress={() => {
-                            this.setState({
-                                selectedTab: 'redTab',
-                            });
                             this.props.history.push("/list");
+                            this.setState({
+                                selectedTab: 'list',
+                            });
                         }}
                         data-seed="logId1"
                     >
@@ -100,10 +99,10 @@ class TabBarCom extends Component {
                         }
                         title="购物车"
                         key="Shooping"
-                        selected={this.state.selectedTab === 'greenTab'}
+                        selected={this.state.selectedTab === 'shopping'}
                         onPress={() => {
                             this.setState({
-                                selectedTab: 'greenTab',
+                                selectedTab: 'shopping',
                             });
                             this.props.history.push("/shopping");
                         }}
@@ -114,10 +113,10 @@ class TabBarCom extends Component {
                         selectedIcon={{ uri:mine2}}
                         title="我的"
                         key="Mine"
-                        selected={this.state.selectedTab === 'yellowTab'}
+                        selected={this.state.selectedTab === 'mine'}
                         onPress={() => {
                             this.setState({
-                                selectedTab: 'yellowTab',
+                                selectedTab: 'mine',
                             });
                             this.props.history.push("/mine");
                         }}
