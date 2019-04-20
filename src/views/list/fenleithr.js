@@ -1,12 +1,10 @@
 import React,{Component,Fragment} from "react";
-import {HashRouter as Router,Route,Link,NavLink,Switch} from "react-router-dom";
+import {HashRouter as Router,NavLink} from "react-router-dom";
 import "./fenleione.css";
 import Image from "../../img/fenlei3.webp";
 
 export default class fenleione extends Component{
-    constructor(){
-        super();
-    }
+
     render(){
         return(
             <Fragment>

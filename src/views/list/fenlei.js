@@ -31,14 +31,14 @@ export default class fenlei extends Component{
     }
     render(){
         let _this=this;
-        let isBox1=this.state.currentIndex==1?'block':'none';
-        let isBox2=this.state.currentIndex==2?'block':'none';
-        let isBox3=this.state.currentIndex==3?'block':'none';
-        let isBox4=this.state.currentIndex==4?'block':'none';
-        let isBox5=this.state.currentIndex==5?'block':'none';
+        let isBox1=this.state.currentIndex===1?'block':'none';
+        let isBox2=this.state.currentIndex===2?'block':'none';
+        let isBox3=this.state.currentIndex===3?'block':'none';
+        let isBox4=this.state.currentIndex===4?'block':'none';
+        let isBox5=this.state.currentIndex===5?'block':'none';
 
         let tabLists=this.state.tabs.map(function (res,index) {
-            let tabStyles=res.id==this.state.currentIndex?'mie active':'mie';
+            let tabStyles=res.id===this.state.currentIndex?'mie active':'mie';
 
             return <li key={index} onClick={this.tabChoiced.bind(_this,res.id)}  className={tabStyles} >{res.tabName}</li>
         }.bind(_this));
