@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Search from "../home/search";
+import Classification from "./classification"
 
 export default class list extends Component {
-  render() {
-    return (
-      <div>
-        <h2>list</h2>
-      </div>
+  render(){
+    return(
+        <div>
+          <Search></Search>
+          <Classification></Classification>
+        </div>
     )
   }
 }
