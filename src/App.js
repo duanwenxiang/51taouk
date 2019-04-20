@@ -5,6 +5,7 @@ import Home from "@/views/home"
 import List from "@/views/list"
 import Shopping from "@/views/shopping"
 import Mine from "@/views/mine"
+import MyRouter from "@/common/myRouter"
 
 class App extends Component {
   render() {
@@ -13,11 +14,11 @@ class App extends Component {
         <Switch>
           <Route path="/home" component={Home}/>
           <Route path="/list" component={List}/>
-          <Route path="/shopping" component={Shopping}/>
+          <MyRouter path="/shopping" component={Shopping}/>
           <Route path="/mine" component={Mine}/>
           <Redirect path="/" to="/home"/>
         </Switch>
-        <TabBarCom/> 
+        <TabBarCom/>
       </HashRouter>
     )
   }

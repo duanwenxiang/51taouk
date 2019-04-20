@@ -111,13 +111,15 @@ class swiperImg extends Component {
         )
     }
     componentDidMount() {
-        this.swiper = new Swiper(this.banner, {
-            slidesPerGroup: 3,
-            slidesPerView: 3,
-            pagination: {
-                el: '.banner-pagination',
-            },
-        })
+        if(!this.swiper){
+            this.swiper = new Swiper(this.banner, {
+                slidesPerGroup: 3,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.banner-pagination',
+                },
+            })
+        }
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(swiperImg);
