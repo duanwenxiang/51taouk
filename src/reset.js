@@ -20,6 +20,6 @@ a { color:#666; text-decoration:none; }
 body,html,#root{
     height: 100%; 
     overflow: auto;
-    font-size:5vw;
+    font-size:31.25vw;
 }
 `
