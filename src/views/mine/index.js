@@ -18,7 +18,6 @@ export default class mine extends Component {
               登陆/注册
             </NavLink>
           </div>
-          {/* <div className="register"></div> */}
         </div>
         </Header>
         <Nav>
